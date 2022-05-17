@@ -11,18 +11,8 @@ body::-webkit-scrollbar{
     padding: 0px;
     margin: 0px;
 }
-.hheader{
-    height: 3rem;
-    background-color: rgb(6, 20, 56);
-    color: white;
-}
-nav{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+
 .hnav{
-    height: 4rem;
     background-color: rgb(6, 20, 56);
     color: white;
 }
@@ -30,20 +20,17 @@ nav{
     height: 3rem;
     background-color: rgb(78, 78, 78);
     color: white;
-    position: sticky;
-    top: 4rem;
-    z-index: 200;
 }
 .hform{
     min-height: calc(100vw/3);
 }
 .hlinks{
-    height: 34px;
+    height: 28px;
     width: auto;
     transition: all;
 }
 .hlinks:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .flexiconos{
     display: flex;
@@ -69,8 +56,9 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .anchocard{
-    width: 90%;
+    width: 17rem;
     padding: 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -98,44 +86,18 @@ span{
 }
 
 .card{
-    flex-direction: row;
+    flex-direction: column;
 }
 .card_img{
 width: 25%;
 height: auto;
 }
-@media (min-width:750px){/*PARA TABLET*/
-    .card{
-        flex-direction: column;
-    }
-    .anchocard{
-        width: 20rem;
-        padding: 0px;
-        border-radius: 8px;
-        overflow: hidden;
-        transition: all 0.5s;
-    }
-}
+
 @media (min-width:1080px){/*PARA DESKTOP*/
     span{
         display:inline;
         margin-left: 2px;
         margin-right: 2px;
         align-self: center;
-    }
-    .hlinks{
-        height: 28px;
-        width: auto;
-        transition: all;
-    }
-    .card{
-        flex-direction: column;
-    }
-    .anchocard{
-        width: 20rem;
-        padding: 0px;
-        border-radius: 8px;
-        overflow: hidden;
-        transition: all 0.5s;
     }
 }
