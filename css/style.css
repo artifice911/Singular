@@ -53,7 +53,7 @@ span{
     padding: 0px;
 }
 .anchocard{
-    width: 16rem;
+    width:18rem;
     padding: 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -84,7 +84,7 @@ span{
 .gris{
     background-color: rgba(43, 43, 43, 0.664);
     border-radius: 16px;
-    width: 70vw;
+    width: 50vw;
     transition: all 1s;
 }
 .slogan{
@@ -107,20 +107,22 @@ transform: scale(1.5);
     background-image: url("../img/img5.png");
 }
 
-.card{
-    flex-direction: column;
-}
 .card_img{
 width: 25%;
 height: auto;
 }
 
-
-@media (min-width:1080px){/*PARA DESKTOP*/
+@media (min-width:1024px){/*PARA DESKTOP*/
     span{
         display:inline;
         margin-left: 2px;
         margin-right: 2px;
         align-self: center;
+    }
+}
+
+@media (max-width:720px){/*PARA MOBILE*/
+    .anchocard{
+        width: 90%;
     }
 }
