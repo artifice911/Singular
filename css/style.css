@@ -55,7 +55,7 @@ span{
 .anchocard{
     width:18rem;
     padding: 0px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     transition: all;
     border: 8px;
