@@ -1,7 +1,7 @@
 
 body{
     background-color: rgb(78, 78, 78);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 body::-webkit-scrollbar{
     display: none;
@@ -56,19 +56,21 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.nav-link{
+    text-align: center;
+}
 .anchocard{
-    width: 17rem;
+    width: 16rem;
     padding: 0px;
     border-radius: 8px;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all;
+    border: 8px;
 }
 .anchocard:hover{
-    transform: scale(1.05);
     border-color: white;
     border-style: solid;
-    border-width: 8px
+    border-width: 4px
 }
 
 .backimg{
