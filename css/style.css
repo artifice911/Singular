@@ -73,7 +73,7 @@ span{
 .backimg{
     overflow: hidden;
     background-image: url("../img/carrusel1.jpg");
-    height: 25vw;
+    height: 18vw;
     background-position: center;
     background-size:100vw auto;
     margin-bottom: 8px;
@@ -84,7 +84,7 @@ span{
 .gris{
     background-color: rgba(43, 43, 43, 0.664);
     border-radius: 16px;
-    width: 50vw;
+    width: 90vw;
     transition: all 1s;
 }
 .slogan{
