@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(37, 37, 37);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body::-webkit-scrollbar{
@@ -18,7 +18,7 @@ body::-webkit-scrollbar{
 }
 .hbar{
     height: 3rem;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(37, 37, 37);
     color: white;
 }
 .hform{
@@ -107,6 +107,17 @@ transform: scale(1.1);
 width: 25%;
 height: auto;
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sticky2{
+    position:sticky;
+    top: 5rem;
+    z-index: 1020;
+}
 
 @media (min-width:1024px){/*PARA DESKTOP*/
     span{
@@ -115,10 +126,25 @@ height: auto;
         margin-right: 2px;
         align-self: center;
     }
+    .sticky2{
+        top: 50px;
+    }
 }
 
-@media (max-width:720px){/*PARA MOBILE*/
+@media (min-width:617px) and (max-width:1024px){/*PARA MOBILE*/
     .anchocard{
         width: 90%;
+    }
+    .sticky2{
+        top: 52px;
+    }
+}
+
+@media (max-width:617px){/*PARA MOBILE*/
+    .anchocard{
+        width: 90%;
+    }
+    .sticky2{
+        top: 90px;
     }
 }
