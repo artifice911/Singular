@@ -13,7 +13,7 @@ body::-webkit-scrollbar{
 }
 
 .hnav{
-    background-color: rgb(6, 20, 56);
+    background-image: linear-gradient(to bottom, rgb(5, 17, 48) , rgb(15, 34, 97));
     color: white;
 }
 .hbar{
@@ -65,6 +65,10 @@ span{
     border-style: solid;
     border-width: 4px
 }
+.imgframe{
+    width: 100%;
+    height: auto;
+    }
 
 .backimg{
     overflow: hidden;
@@ -74,11 +78,27 @@ span{
     background-size:100vw auto;
     margin-bottom: 8px;
 }
+.img2{
+    background-image: url("../img/carrusel2.jpg");
+}
 .gris{
     background-color: rgba(43, 43, 43, 0.664);
     border-radius: 16px;
     width: 70vw;
     transition: all 1s;
+}
+.slogan{
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 1s;
+}
+.slogan:hover{
+transform: scale(1.5);
 }
 .gris:hover{
     transform: scale(1.2);
