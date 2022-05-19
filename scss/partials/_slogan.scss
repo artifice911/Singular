@@ -1,0 +1,19 @@
+.gris{
+    background-color: rgba(226, 226, 226, 0.664);
+    border-radius: 16px;
+    width: 70vw;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.slogan{
+    color: rgb(13, 13, 80);
+    display: flex;
+    justify-self: center;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+

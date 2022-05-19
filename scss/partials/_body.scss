@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(37, 37, 37);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: $colorFondo;
+    font-family: $tipografia;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar{ /*permite ocultar la scrollbar */
     display: none;
 }
