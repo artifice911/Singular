@@ -1,11 +1,5 @@
-body{
-    background-color: rgb(37, 37, 37);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-body::-webkit-scrollbar{
-    display: none;
-}
-
+@import "./partials/partial1";
+@import "./partials/cards";
 .padmarg{
     padding: 0px;
     margin: 0px;
@@ -51,19 +45,7 @@ span{
     text-align: center;
     padding: 0px;
 }
-.anchocard{
-    width:18rem;
-    padding: 0px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all;
-    border: 8px;
-}
-.anchocard:hover{
-    border-color: white;
-    border-style: solid;
-    border-width: 4px
-}
+
 .imgframe{
     width: 100%;
     height: auto;
@@ -104,48 +86,10 @@ transform: scale(1.1);
     background-image: url("../img/img5.png");
 }
 
-.card_img{
-width: 25%;
-height: auto;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .sticky2{
     position:sticky;
     top: 5rem;
     z-index: 1020;
 }
 
-@media (min-width:1024px){/*PARA DESKTOP*/
-    span{
-        display:inline;
-        margin-left: 2px;
-        margin-right: 2px;
-        align-self: center;
-    }
-    .sticky2{
-        top: 50px;
-    }
-}
-
-@media (min-width:617px) and (max-width:1024px){/*PARA MOBILE*/
-    .anchocard{
-        width: 90%;
-    }
-    .sticky2{
-        top: 52px;
-    }
-}
-
-@media (max-width:617px){/*PARA MOBILE*/
-    .anchocard{
-        width: 90%;
-    }
-    .sticky2{
-        top: 90px;
-    }
-}
+@import "./partials/mediaquerys";

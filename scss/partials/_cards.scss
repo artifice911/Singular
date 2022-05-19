@@ -1,0 +1,22 @@
+.anchocard{
+    width:18rem;
+    padding: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all;
+    border: 8px;
+}
+.anchocard:hover{
+    border-color: white;
+    border-style: solid;
+    border-width: 4px
+}
+.card_img{
+    width: 25%;
+    height: auto;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
