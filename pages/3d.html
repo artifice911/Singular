@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services of 3D modeling, game design and 3d interactive experiences in the web">
+    <meta name="keywords" content="3D MODEL, VIDEOGAMES, CHARACTERS 3D, 3D DESIGN, UNREAL ENGINE, BLENDER, MAYA, 3D PRINTING, ">
+    <title>SINGULAR 3d</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/singularFavicon.png">
+  </head>
+
+  <style>
+  	body {
+  		overflow:hidden
+  	}
+	</style>
+
+  <body style="background:none transparent">
+
+  </body>
+  
+  <script type="module">
+      import * as THREE from '../three/three.module.js';      
+      import {OrbitControls} from '../three/OrbitControls.js';
+      import {GLTFLoader} from '../three/GLTFLoader.js';
+
+      let camera, scene, renderer, clock, mixer;
+      
+      const init = () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        //crea una cámara y configura (profundidad de campo FOV,tamaño/proporcion,distanciaMínimaDeVista,distanciaMáximaDeVista)
+        camera = new THREE.PerspectiveCamera(50,window.innerWidth/window.innerHeight, 0.25, 20);
+        camera.position.set(3,0,0);
+
+        scene = new THREE.Scene();
+  			clock = new THREE.Clock();
+
+        //crea una grilla de referencia desde el punto 0 0 0 de la escena
+        //const gridHelper = new THREE.GridHelper( 10, 10 );
+        //scene.add( gridHelper );
+
+        //carga un modelo 3d en formato gltf
+				const loader = new GLTFLoader().setPath('../3d/');
+		    loader.load('3DANIMADO.gltf', gltf => {
+		        gltf.scene.scale.set(1.0, 1.0, 1.0);
+				    //scene.background = new THREE.Color(0xdddddd);
+		       	
+            gltf.scene.position.set(0,-0.7,-0.2)
+		       	
+						   	
+			     mixer = new THREE.AnimationMixer( gltf.scene );
+					  
+					  gltf.animations.forEach( ( clip ) => {
+					    
+					      mixer.clipAction( clip ).play();
+					    
+					  } );
+
+		       	
+						scene.add(gltf.scene);
+		        render();
+        });
+
+				let light2 = new THREE.PointLight(0xc4c4c4,1);
+				light2.position.set(500,100,0);
+				scene.add(light2);
+
+				const light = new THREE.AmbientLight( 0xf5c9d2 ); // soft white light
+				scene.add( light );
+				scene.background = '0xffffff';
+
+        renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
+        renderer.setClearColor( 0x000000, 0 );	// para renderizar con fondo transparente: alpha=true
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+                //renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        //renderer.toneMappingExposure = 1;
+        //renderer.outputEncoding = THREE.sRGBEncoding;
+        container.appendChild(renderer.domElement);
+
+        //const pmremGenerator = new THREE.PMREMGenerator(renderer);
+        //pmremGenerator.compileEquirectangularShader();
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.addEventListener('change', render); // use if there is no animation loop
+        controls.minDistance = 2;
+        controls.maxDistance = 10;
+        controls.target.set(0, 0.5, - 0.2);
+        controls.update();
+
+        window.addEventListener('resize', onWindowResize);
+      };
+
+      const onWindowResize = () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        render();
+      };
+      function animate() {
+				
+				requestAnimationFrame( animate );
+				
+				var delta = clock.getDelta();
+				
+				if ( mixer ) mixer.update( delta );
+
+				renderer.render( scene, camera );
+
+			}
+        const render = () => {
+      	//renderer.setClearColor( 0x000000, 0 ); // the default
+        renderer.render(scene, camera);
+      };
+
+      init();
+      animate();
+      render();
+      
+    </script>
+</html>
