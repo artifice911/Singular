@@ -1,0 +1,8 @@
+Apliqué los meta "description" "title" y "keywords" en todas las páginas.
+Agregué slogan, nombres de productos y textos directamente con h1 h5 y h6 para poder localizarlos desde la web.
+
+SASS-2
+Apliqué Mixing en el archivo scss "style" para modificar el tamaño de los íconos en la web.
+Apliqué Extend en el archivo scss "bgimages" para hacer cambios en las imágenes de distintos contenedores.
+Apliqué Nesting en los archivos scss "cards" y "slogan" para anidar código de css.
+Apliqué Maps en el archivo scc "btns" para guardar paleta de colores en los botones de redes (Discord, Whatsapp, Linkedin).

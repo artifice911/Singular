@@ -1,0 +1,11 @@
+$coloresRedes:(
+    whatsapp:#25D366,
+    linkedin:#0072b1,
+    discord:#5865F2
+);
+
+@each $clave,$valor in $coloresRedes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}

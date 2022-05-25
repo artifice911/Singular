@@ -5,14 +5,19 @@
 @import "partials/cards";
 @import "partials/bgImages";
 @import "partials/slogan";
+@import "partials/btns";
+
+@mixin sizeIconos ($altura,$ancho) {
+    height: $altura;
+    width: $ancho;
+}
 
 .hlinks{
-    height: 28px;
-    width: auto;
+    @include sizeIconos(28px,auto);
     transition: all;
-}
-.hlinks:hover{
-    transform: scale(1.05);
+    &.hover{
+        transform: scale(1.05);
+    }
 }
 
 .center{
@@ -22,12 +27,6 @@
 
 span{
     display: none;
-}
-
-.sticky2{
-    position:sticky;
-    top: 5rem;
-    z-index: 1020;
 }
 
 @import "./partials/mediaquerys";

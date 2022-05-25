@@ -5,12 +5,13 @@
     overflow: hidden;
     transition: all;
     border: 8px;
+    &:hover{
+        border-color: white;
+        border-style: solid;
+        border-width: 4px
+    }
 }
-.anchocard:hover{
-    border-color: white;
-    border-style: solid;
-    border-width: 4px
-}
+
 .card_img{
     width: 25%;
     height: auto;
@@ -18,5 +19,5 @@
 .card-body{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
