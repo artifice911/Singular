@@ -2,16 +2,16 @@
     background-color: rgba(226, 226, 226, 0.664);
     border-radius: 16px;
     width: auto;
-    transition: all 1s;
+    transition: all;
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.3);
     }
 }
 
 .slogan{
     color: $colorSecundario;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 

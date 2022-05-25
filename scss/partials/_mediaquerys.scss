@@ -5,25 +5,10 @@
         margin-right: 2px;
         align-self: center;
     }
-    .sticky2{
-        top: 50px;
-    }
-}
-
-@media (min-width:617px) and (max-width:1024px){/*PARA MOBILE*/
-    .anchocard{
-        width: 90%;
-    }
-    .sticky2{
-        top: 52px;
-    }
 }
 
 @media (max-width:617px){/*PARA MOBILE*/
     .anchocard{
         width: 90%;
-    }
-    .sticky2{
-        top: 90px;
     }
 }
