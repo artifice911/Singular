@@ -15,8 +15,8 @@
 .hlinks{
     @include sizeIconos(28px,auto);
     transition: all;
-    &.hover{
-        transform: scale(1.05);
+    &:hover{
+        transform: scale(1.07);
     }
 }
 

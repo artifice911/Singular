@@ -118,14 +118,46 @@ body::-webkit-scrollbar {
   background-color: #5865F2;
 }
 
+.btn-outline-success {
+  color: #2296eb;
+  border-color: #2296eb;
+}
+
+.btn-outline-success:hover {
+  background-color: #2296eb;
+  border-color: #2296eb;
+}
+
+.btn-success {
+  background-color: #0072b1;
+}
+
+.btn-success:hover {
+  background-color: #2296eb;
+  border-color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #0072b1;
+}
+
+.btn-primary:hover {
+  background-color: #2296eb;
+  border-color: #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #2296eb;
+}
+
 .hlinks {
   height: 28px;
   width: auto;
   transition: all;
 }
 
-.hlinks.hover {
-  transform: scale(1.05);
+.hlinks:hover {
+  transform: scale(1.07);
 }
 
 .center {
