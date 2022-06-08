@@ -1,3 +1,62 @@
+
+.btn-outline-success{
+    color:#2296eb;
+    border-color: #2296eb;
+    &:hover{
+        background-color: #2296eb;
+        border-color: #2296eb;
+    }
+    &:active{
+        background-color: #0072b1;
+        border-color: #ffffff;
+        
+    }
+    &:focus{
+        background-color: #0072b1;
+        border-color: #ffffff;
+    }
+}
+
+.btn-success{
+    background-color: #0072b1;
+    border-color: transparent;
+    &:hover{
+        background-color: #2296eb;
+        border-color: #ffffff;
+    }
+    &:active{
+        background-color: #0072b1;
+        border-color: #ffffff;
+    }
+    &:focus{
+        background-color: #0072b1;
+        border-color: #ffffff;
+    }
+}
+
+.btn-outline-primary{
+    border-color: grey;
+    border-width: 2px;
+    color: grey;
+
+}
+
+.btn-primary{
+    background-color: #0072b1;
+    &:hover{
+        background-color: #2296eb;
+        border-color: #ffffff;
+    }
+    &:active{
+        background-color: #2296eb;
+        border-color: #ffffff;
+    }
+    &:focus{
+        background-color: #0072b1;
+        border-color: #ffffff;
+    }
+}
+
 $coloresRedes:(
     whatsapp:#25D366,
     linkedin:#0072b1,
@@ -7,32 +66,20 @@ $coloresRedes:(
 @each $clave,$valor in $coloresRedes {
     .btn-#{$clave} {
         background-color: $valor;
-    }
-}
-
-.btn-outline-success{
-    color:#2296eb;
-    border-color: #2296eb;
-    &:hover{
-        background-color: #2296eb;
-        border-color: #2296eb;
-    }
-}
-
-.btn-success{
-    background-color: #0072b1;
-    &:hover{
-        background-color: #2296eb;
-        border-color: #ffffff;
-    }
-}
-.btn-primary{
-    background-color: #0072b1;
-    &:hover{
-        background-color: #2296eb;
-        border-color: #ffffff;
-    }
-    &:active{
-        background-color: #2296eb;
+        border: none;
+        border-radius: 10px;
+        &:hover{
+            background-color: $valor;
+            transform: scale(1.05);
+        }
+        &:active{
+            background-color: $valor;
+            border-color: #ffffff;
+            border: #ffffff;
+        }
+        &:focus{
+            background-color: $valor;
+            border-color: #ffffff;
+        }
     }
 }
