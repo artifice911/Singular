@@ -1,0 +1,37 @@
+@mixin sizeIconos ($altura,$ancho) {
+    height: $altura;
+    width: $ancho;
+}
+
+.hlinks{
+    @include sizeIconos(28px,auto);
+    transition: all;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        fill: #2296eb;
+    }
+}
+.iconactive{
+
+}
+
+.center{
+    display: flex;
+    justify-content:stretch;
+}
+
+span{
+    display: none;
+}
+label{
+    display:block;
+}
+.mapa{
+    border: 0px;
+    width: 100%;
+    height: calc(100vw/3);
+    display: flex;
+    justify-self: center;
+}

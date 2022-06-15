@@ -5,7 +5,7 @@
 }
 
 .hnav {
-  background-image: linear-gradient(to bottom, #051130, #0f2261);
+  background-image: linear-gradient(to bottom, rgb(5, 17, 48), rgb(15, 34, 97));
   color: white;
 }
 
@@ -16,7 +16,7 @@
 
 .hbar {
   height: 3rem;
-  background-color: #252525;
+  background-color: rgb(37, 37, 37);
   color: white;
 }
 
@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: rgb(37, 37, 37);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -43,7 +43,6 @@ body::-webkit-scrollbar {
   transition: all;
   border: 8px;
 }
-
 .anchocard:hover {
   border-color: white;
   border-style: solid;
@@ -66,7 +65,7 @@ body::-webkit-scrollbar {
   height: auto;
 }
 
-.backimg, .img2, .img3, .img4 {
+.backimg, .img4, .img3, .img2 {
   overflow: hidden;
   background-image: url("../img/carrusel1.jpg");
   height: 30vw;
@@ -90,7 +89,7 @@ body::-webkit-scrollbar {
 .bgimg4 {
   background-image: url("../img/Light.svg");
   background-position: center;
-  background-size: 100vw 500px;
+  background-size: 100% 500px;
   background-repeat: no-repeat;
 }
 
@@ -116,15 +115,13 @@ body::-webkit-scrollbar {
   width: auto;
   transition: all;
 }
-
 .gris:hover {
   transform: scale(1.1);
 }
 
 .slogan {
-  color: #0d0d50;
+  color: rgb(13, 13, 80);
 }
-
 .slogan:hover {
   transform: scale(1.05);
 }
@@ -133,17 +130,14 @@ body::-webkit-scrollbar {
   color: #2296eb;
   border-color: #2296eb;
 }
-
 .btn-outline-success:hover {
   background-color: #2296eb;
   border-color: #2296eb;
 }
-
 .btn-outline-success:active {
   background-color: #0072b1;
   border-color: #ffffff;
 }
-
 .btn-outline-success:focus {
   background-color: #0072b1;
   border-color: #ffffff;
@@ -153,17 +147,14 @@ body::-webkit-scrollbar {
   background-color: #0072b1;
   border-color: transparent;
 }
-
 .btn-success:hover {
   background-color: #2296eb;
   border-color: #ffffff;
 }
-
 .btn-success:active {
   background-color: #0072b1;
   border-color: #ffffff;
 }
-
 .btn-success:focus {
   background-color: #0072b1;
   border-color: #ffffff;
@@ -178,17 +169,14 @@ body::-webkit-scrollbar {
 .btn-primary {
   background-color: #0072b1;
 }
-
 .btn-primary:hover {
   background-color: #2296eb;
   border-color: #ffffff;
 }
-
 .btn-primary:active {
   background-color: #2296eb;
   border-color: #ffffff;
 }
-
 .btn-primary:focus {
   background-color: #0072b1;
   border-color: #ffffff;
@@ -199,18 +187,15 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 10px;
 }
-
 .btn-whatsapp:hover {
   background-color: #25D366;
   transform: scale(1.05);
 }
-
 .btn-whatsapp:active {
   background-color: #25D366;
   border-color: #ffffff;
   border: #ffffff;
 }
-
 .btn-whatsapp:focus {
   background-color: #25D366;
   border-color: #ffffff;
@@ -221,18 +206,15 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 10px;
 }
-
 .btn-linkedin:hover {
   background-color: #0072b1;
   transform: scale(1.05);
 }
-
 .btn-linkedin:active {
   background-color: #0072b1;
   border-color: #ffffff;
   border: #ffffff;
 }
-
 .btn-linkedin:focus {
   background-color: #0072b1;
   border-color: #ffffff;
@@ -243,18 +225,15 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 10px;
 }
-
 .btn-discord:hover {
   background-color: #5865F2;
   transform: scale(1.05);
 }
-
 .btn-discord:active {
   background-color: #5865F2;
   border-color: #ffffff;
   border: #ffffff;
 }
-
 .btn-discord:focus {
   background-color: #5865F2;
   border-color: #ffffff;
@@ -265,11 +244,9 @@ body::-webkit-scrollbar {
   width: auto;
   transition: all;
 }
-
 .hlinks:hover {
   transform: scale(1.1);
 }
-
 .hlinks:active {
   fill: #2296eb;
 }
@@ -287,6 +264,14 @@ label {
   display: block;
 }
 
+.mapa {
+  border: 0px;
+  width: 100%;
+  height: 33.3333333333vw;
+  display: flex;
+  justify-self: center;
+}
+
 @media (min-width: 1024px) {
   /*PARA DESKTOP*/
   span {
@@ -296,14 +281,13 @@ label {
     align-self: center;
   }
 }
-
 @media (max-width: 627px) {
   /*PARA MOBILE*/
   .anchocard {
     width: 90%;
   }
+
   .instagram-media {
     width: 90%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

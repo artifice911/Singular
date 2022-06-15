@@ -1,0 +1,34 @@
+Aspectos que están Ok:
+
+HTML para la estructura de nuestro sitio web con el uso adecuado del mismo y tener 5 paginas html de acuerdo al proyecto.
+CSS para los estilos de nuestro sitio web controlar el uso adecuado para generar una interfaz llamativa temas de colores, tamaños, espaciados, separaciones, fuente, layout etc y fundamental siempre pulir el responsive de acuerdo al proyecto con estilos propios y de ser necesario lo visto con bootstrap. se pueden pulir ciertas partes o zonas de contenido en tema responsive
+SASS para compilar nuestros estilos y generar un unico archivo de css a vincular con los apartados vistos de sass que encajen con el proyecto.
+Entregar el link del repositorio para poder descargar y ver el codigo y archivos fuente del proyecto.
+Entregar el link del repositorio subido a un hosting gratuito como vimos en clases ejemplo pudiendo ser github pages, 000webhost o netlify, etc. Verificando que subido a un hosting funcione y se visualice correctamente el sitio en todas las versiones escritorio, tablet y movil
+Se cuenta con información referente al proyecto.
+Se cuenta con el archivo .gitignore para evitar seguir carpetas o archivos en git innecesarios.
+Se aplico el apartado del SEO.
+
+
+
+
+Aspectos que Corregir y Mejorar:
+
+En tu index.html no se implemento el uso del elemento semantico header como vimos en clases primero header, luego el main en el medio y al final el footer, recuerda tambien que el main seria el contenedor del medio para colocar el contenido o section a mostrar en cada pagina.
+En tu archivo principal de sass -> "style.scss" comentamos en clases que lo ideal para este archivo seria solo tener y dejar las importaciones de tus parciales y todo lo que sea estilos como tal colocarlo en eun parcial como corresponda o consideres.
+
+
+En tu 3d.html estas aplicando estilos dentro del html en las lineas 15 al 19 no es adecuado para nosotros ya que para eso vimos que lo correcto o adecuado de momento para nosotros es usar nuestra hoja de estilos externa como tal a vincular nada mas y desde alli usar los estilos estilos que querramos o vayamos creando, pero luego al ver el body esta vacio en ese archivo y tienes un codigo de javascript que de seguro no es algo visto en el curso o sea alguna libreria que quisiste usar en un iframe en tu pagina de services, ojo con esto.
+
+En tu aboutMme.html no se utilizo el elemento semantico header y main como vimos de usar header, main y footer.
+En tu contract.html no se utilizo el elemento semantico header y main como vimos de usar header, main y footer.
+En tu models.html no se utilizo el elemento semantico header.
+En tu services.html no se utilizo el elemento semantico header.
+
+En tu contract.html se puede luego sacar varios svg y colocarlos como imagenes como tal y no directo el svg en dado caso asi reducir un poco el codigo html, detalle menor.
+
+
+En la pagina de inicio se puede diferenciar un poco mas el contenido a mostrar en dicha pagina principal en comparacion a tus paginas models y services tienen la misma estructura a mostrar, detalle menor pero capaz en las paginas principales conviene mostrar informacion que resalte, resumida, o distinta a otra pagina para captar la atencion del usuario.
+
+En la pagina aboutMe en vista movil se desborda el mapa que tienes alli fijate en revisar siempre cada pagina en vista escritorio y movil no tengas scroll hacia la derecha no deseado.
+En la pagina contact en vista movil cierta zona o elementos se desbordan fijate en donde tienes los icones o redes sociales hay un pequeños espacio o desborde a la derecha no adecuado.
