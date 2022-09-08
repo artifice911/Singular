@@ -1,0 +1,167 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background: url("../images/portada-corta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+
+.collapsing,
+.show {
+  background: #343a40;
+}
+
+/* NAVBAR */
+.nosotros {
+  border-bottom: 5px solid #f54447;
+}
+
+.areas {
+  border-bottom: 5px solid #fe9811;
+}
+
+.canales {
+  border-bottom: 5px solid #ffe33a;
+}
+
+.proyectos {
+  border-bottom: 5px solid #24b373;
+}
+
+.comunidad {
+  border-bottom: 5px solid #2a9dd1;
+}
+
+.contacto {
+  border-bottom: 5px solid #1e6b8f;
+}
+
+._fs-navbar {
+  position: fixed;
+}
+
+
+._fs-text-primary {
+  color: #28a745;
+}
+
+.hero {
+  background: url("../images/portada.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.social > a:hover {
+  background: #28a745;
+}
+
+.social a i {
+  font-size: 12px;
+}
+
+/* CANALES */ 
+
+.--fs_zoom:hover {
+  transform: scale(1.2);
+}
+
+.--fs_zoom {
+  transition: transform 0.6s;
+}
+
+.card-body {
+  z-index: 100;
+}
+
+/* ROYECTOS */
+
+.--fs_backg-color {
+  background-color: #000;
+  opacity: 75%;
+}
+
+.--fs_margin {
+  margin-bottom: 100px;
+}
+
+.--fs_font-size {
+  font-size: small;
+  width: 15%;
+}
+
+.--fs_title-font {
+  font-weight: 400;
+}
+
+.--fs_paragraph1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.--fs_w {
+  width: 100px;
+}
+
+/* COMUNIDAD */
+
+.--fs_paragraph2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.--fs_radious {
+  border-radius: 10px;
+}
+
+
+.--fs_font {
+  font-size: 15px;
+}
+
+/* CONTACTO */
+
+.--fs_icon-color {
+  /* color: #33cc33; */
+  color: #2eb82e;
+  width: 50px;
+  height: 50px;
+}
+
+.--fs_width {
+  width: 10%;
+}
+
+nav{
+  z-index: 1000;
+}

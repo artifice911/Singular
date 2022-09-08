@@ -1,0 +1,1 @@
+const express=require('express'), app=express(), PORT=7707; app.use(express.static('public')); app.use(express.static('./../public')); app.listen(PORT, () => { console.log('http://localhost:'+PORT); });
